@@ -1,6 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
+// cspell:disable
 public class Ejercicio3_4 {
     static Scanner sc = new Scanner(System.in);
     static Random rand = new Random();
