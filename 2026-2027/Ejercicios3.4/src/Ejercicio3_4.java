@@ -115,17 +115,14 @@ public class Ejercicio3_4 {
     public static void ejercicio6() {
         System.out.println("Ejercicio 6");
         int numero = rand.nextInt(50) + 1;
+        int divisores = 0;
         System.out.println("Introduce un número: " + numero);
-        boolean esPrimo = true;
-
-        for (int i = 2; i <= Math.sqrt(numero); i++) {
+        for (int i = 1; i <= numero; i++) {
             if (numero % i == 0) {
-                esPrimo = false;
-                break;
+                divisores++;
             }
-
         }
-        if (esPrimo) {
+        if (divisores == 2) {
             System.out.println(numero + " es un número primo.");
         } else {
             System.out.println(numero + " no es un número primo.");
